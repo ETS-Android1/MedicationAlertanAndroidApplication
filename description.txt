@@ -1,0 +1,24 @@
+https://mycodingschooll.blogspot.com/2019/01/medication-alert.html
+
+
+Get notification and alerm time to take medichine !!
+
+
+Many people forget to take their medicine in real time so there treatment is not complete .
+
+use this app and set your time to take medichine after meal or before meal and specifice time.
+
+you can see the calander which date you need to which medichine!!
+There are two options in first page. One is before meal and another is after meal. 
+User can simply add their medicine with giving proper information and medichine alert will remember 
+them carefully and it it will inform user in the exact time to notify that, 
+its time to take medicine. And if any dose of medicine is 30 days,
+ Medichine alert will notify 30 days accordingly in same time. 
+
+ There has an option to user to select their medicine image. So that,
+ if anyone don’t read he/she may taken medicine with the image.
+
+
+always you can see a list of medichine of after meal and before meal which you want to take .
+
+set star date num of days to take it and finally get notifcation and alerm
