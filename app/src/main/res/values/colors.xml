@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="colorRed">#e80202</color>
+    <color name="colorGreen">#0e6215</color>
+    <color name="colorYellow">#d69d0b</color>
+
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="Wheat2">#E24515</color>
+    <color name="back2">#34CFC0</color>
+</resources>

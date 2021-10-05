@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EditMedichineActivity">
+<!--
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer_1">
+    </com.google.android.gms.ads.AdView>
+
+-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_medicine_name"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <EditText
+                        android:id="@+id/medicine_name_ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_design"
+                        android:maxLines="1"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Spinner
+                            android:id="@+id/medicine_type_SP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/medicine_type"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/take_a_snap"
+                        android:padding="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_take_snap"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_camera"
+                        android:padding="8dp"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorPrimary"
+                        android:background="@drawable/round_shape"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/medicine_image_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/medicine_IV"
+                        android:layout_width="330dp"
+                        android:layout_height="189dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <Button
+                            android:id="@+id/retakeBTN"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:text="Retake"
+                            android:textColor="#fff"
+                            android:layout_marginRight="5dp" />
+
+                        <Button
+                            android:id="@+id/cancelBTN"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:text="Cancel"
+                            android:textColor="#fff"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/how_many_times_a_day"
+                        android:padding="5dp" />
+
+                    <Spinner
+                        android:id="@+id/no_of_times_SP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/slot_array"
+                        android:padding="5dp">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:id="@+id/three_slot_schedule_LAYOUT"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/first_slot_LAYOUT"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="#f5f5f5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Select Slot 1"
+                            android:gravity="center"
+                            android:padding="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/first_slot_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:text="Set Time"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:padding="5dp"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/second_slot_LAYOUT"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="#f0f0f0">
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="Select Slot 2"
+                            android:gravity="center"
+                            android:padding="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/second_slot_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:text="Set Time"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:padding="5dp"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/third_slot_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_margin="2dp"
+                        android:background="#f5f5f5">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Select Slot 3"
+                            android:padding="5dp"/>
+
+
+                        <TextView
+                            android:id="@+id/third_slot_TV"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/oval"
+                            android:gravity="center"
+                            android:text="Set Time"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:padding="5dp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/schedule"
+                        android:padding="5dp"
+                        android:textSize="22sp"/>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="No of Days"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/no_of_days_ET"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:background="@drawable/edit_text_design"
+                            android:maxLines="1"
+                            android:editable="false"
+                            android:maxLength="4"/>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Start Date"
+                            android:padding="5dp"
+                            android:gravity="center_vertical"/>
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:paddingBottom="5dp">-->
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/select_dates"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:entries="@array/select_dates"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:layout_marginRight="2dp" />-->
+
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/select_months"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:entries="@array/select_months"-->
+                        <!--android:background="@color/colorPrimaryDark"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:layout_marginRight="2dp"/>-->
+
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/select_year"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:entries="@array/select_year"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textAlignment="center"-->
+                        <!--/>-->
+
+
+                        <!--</LinearLayout>-->
+
+                        <TextView
+                            android:id="@+id/start_date_TV"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="Touch here to set date"
+                            android:padding="5dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#4b4b4b"-->
+                    <!--android:layout_margin="8dp"/>-->
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days"
+                        android:padding="5dp"
+                        android:textSize="22sp"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/everyday_RB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Everyday"
+                            android:padding="5dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/specific_day_RB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Specific day of week"
+                            android:padding="5dp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/days_interval_RB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Days interval"
+                            android:padding="5dp"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_specific_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select specific day of week"
+                        android:padding="5dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/cb_saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"
+                        android:padding="5dp"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_days_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select days interval"
+                        android:padding="5dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+
+
+                        <ImageView
+                            android:id="@+id/iv_mynas"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/ic_mynus"
+                            android:padding="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/round_shape"
+                            tools:ignore="VectorDrawableCompat" />
+
+
+                        <EditText
+                            android:id="@+id/et_days_interval"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:gravity="center"
+                            android:inputType="number"/>
+
+                        <ImageView
+                            android:id="@+id/iv_plus"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/ic_plus"
+                            android:padding="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/round_shape"
+                            tools:ignore="VectorDrawableCompat" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select when medicine should take?"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textSize="16sp"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/before_meal_RB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Before Meal"/>
+
+                        <RadioButton
+                            android:id="@+id/after_meal_RB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="After Meal"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/set_BTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="16sp"
+                android:background="@drawable/oval"
+                android:textColor="#fff"
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

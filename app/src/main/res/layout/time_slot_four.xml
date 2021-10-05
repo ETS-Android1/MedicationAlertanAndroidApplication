@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="#f5f5f5"
+            android:elevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Select Slot 1"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="07.00 AM"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:background="#fff">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Select Slot 2"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="01.00 PM"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="5dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:background="#fff">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Select Slot 3"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="10.30 PM"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:background="#fff">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Select Slot 4"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="01.00 PM"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="5dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

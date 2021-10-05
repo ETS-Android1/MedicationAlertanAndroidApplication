@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Medicine Alert</string>
+    <string name="title_activity_medichine__design">Medichine_Design</string>
+    <string-array name="select_months">
+        <item>Month</item>
+        <item>01. January</item>
+        <item>02. February</item>
+        <item>03. March</item>
+        <item>04. April</item>
+        <item>05. May</item>
+        <item>06. June</item>
+        <item>07. July</item>
+        <item>08. August</item>
+        <item>09. September</item>
+        <item>10. October</item>
+        <item>11. November</item>
+        <item>12. December</item>
+
+    </string-array>
+
+
+    <string-array name="select_dates">
+        <item>Day</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+
+    </string-array>
+
+
+    <string-array name="select_year">
+        <item>Year</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+
+
+    </string-array>
+
+
+    <string-array name="slot_array">
+
+        <item>1 time in a day</item>
+        <item>2 times in a day</item>
+        <item>3 times in a day</item>
+
+    </string-array>
+
+
+    <string-array name="medicine_type">
+
+        <item>Medicine Type</item>
+        <item>Tablet</item>
+        <item>Capsule</item>
+        <item>Syrup</item>
+        <item>Injection</item>
+        <item>Ointment</item>
+        <item>Eye Drop</item>
+
+    </string-array>
+
+
+    <string-array name="blood_group">
+
+        <item>Blood Group</item>
+        <item>A+(ve)</item>
+        <item>A-(ve)</item>
+        <item>B+(ve)</item>
+        <item>B-(ve)</item>
+        <item>AB+(ve)</item>
+        <item>AB-(ve)</item>
+        <item>O+(ve)</item>
+        <item>O-(ve)</item>
+
+    </string-array>
+
+
+    <string-array name="remember_before">
+
+        <item>Hour</item>
+        <item>Minute</item>
+
+    </string-array>
+
+    <string name="enter_medicine_name"><u>Enter Medicine Name</u></string>
+    <string name="how_many_times_a_day"><u>How many times a day</u></string>
+    <string name="schedule"><u>Schedule</u></string>
+    <string name="days"><u>Days</u></string>
+    <string name="set">Set</string>
+    <string name="take_a_snap"><u>Take a picture (optional)</u></string>
+    <string name="edit">Edit</string>
+    <string name="btn_edit">Edit</string>
+    <string name="add_appointment">Appointments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pharmacy_map">Map</string>
+
+</resources>
